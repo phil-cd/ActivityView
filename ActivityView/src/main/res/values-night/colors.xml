@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="enabled">#FF9800</color>
+    <color name="disabled">#8D8D8D</color>
+    <color name="text">#8D8D8D</color>
+</resources>
