@@ -75,7 +75,7 @@ afterEvaluate {
             release(MavenPublication) {
                 groupId = 'de.philcd'
                 artifactId = 'activityview'
-                version = android.defaultConfig.versionName
+                version = System.env.release ? android.defaultConfig.versionName : android.defaultConfig.versionName + '-SNAPSHOT'
 
                 from components.release
             }
