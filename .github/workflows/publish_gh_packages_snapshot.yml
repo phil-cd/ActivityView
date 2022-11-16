@@ -1,7 +1,8 @@
-name: Publish Release to GitHub packages
+name: Publish Snapshot to GitHub packages
 
 on:
-  release:
+  push:
+    branches: [ "develop" ]
 
 jobs:
   build:
@@ -26,4 +27,3 @@ jobs:
       env:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
-        release: "true"
