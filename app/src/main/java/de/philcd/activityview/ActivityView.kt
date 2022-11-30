@@ -52,6 +52,7 @@ fun ActivityView(
     boxShape: Shape = RectangleShape,
     monthLabelFontSize: TextUnit = 16.sp
 ) {
+    prepareActivities(activities)
     val firstDay = firstVisibleDay(numWeeksToShow)
     val numDaysVisible = getNumberOfVisibleDays(firstDay, today())
 
@@ -343,6 +344,18 @@ fun getActivityColor(
         }
     }
     return noActivityColor
+}
+
+/**
+ * Sets time of [activities] to 00:00:00.000.
+ */
+fun prepareActivities(activities: MutableMap<Calendar, Int>) {
+    activities.forEach { (calendar, i) ->
+        calendar.set(HOUR, 0)
+        calendar.set(MINUTE, 0)
+        calendar.set(SECOND, 0)
+        calendar.set(MILLISECOND, 0)
+    }
 }
 
 /**
