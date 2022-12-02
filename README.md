@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/phil-cd/ActivityView/7-readme/.github/images/ActivityView.png" width="620px"/><br/>
+  <img src="https://raw.githubusercontent.com/phil-cd/ActivityView/main/.github/images/ActivityView.png" width="620px"/><br/>
   ActivityView
 </h1>
 
@@ -36,7 +36,7 @@ maven {
 
 ### Simple Example
 
-<img src="https://raw.githubusercontent.com/phil-cd/ActivityView/7-readme/.github/images/ActivityViewRandom.png" width="400px"/><br/>
+<img src="https://raw.githubusercontent.com/phil-cd/ActivityView/main/.github/images/ActivityViewRandom.png" width="400px"/><br/>
 
 The following example code creates an activity view with random activities over the past 40 weeks.
 
@@ -63,7 +63,7 @@ ActivityView(activities = activities, numWeeksToShow = numWeeksToShow)
 
 ### Configuring Color
 
-<img src="https://raw.githubusercontent.com/phil-cd/ActivityView/7-readme/.github/images/ActivityViewBlue.png" width="400px"/><br/>
+<img src="https://raw.githubusercontent.com/phil-cd/ActivityView/main/.github/images/ActivityViewBlue.png" width="400px"/><br/>
 
 The color of activity items can be configured using `minColor` and `maxColor`.
 
